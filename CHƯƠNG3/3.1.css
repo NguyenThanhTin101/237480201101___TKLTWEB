@@ -1,0 +1,27 @@
+h1{
+    color: red;
+}
+
+h2{
+    color: blue;
+}
+
+h3{
+    color: green;
+}
+
+h6{
+    font-family: 'Times New Roman', Times, serif;
+    size: 14;
+    font-weight: bold;
+}
+
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    size: 12;
+    font-weight: bold;
+}
+
+span{
+    background-color:yellow ;
+}

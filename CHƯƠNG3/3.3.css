@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+}
+
+ol{
+    color: black ;
+    size: 14;
+}
+
+table{
+    border-style: solid;
+    border-width: 5px;
+    margin: 0px;
+    background-color: pink;
+
+}
+
