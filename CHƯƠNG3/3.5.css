@@ -1,0 +1,32 @@
+.indam{
+    font-weight: bold;
+}
+
+.hv{
+    list-style-type: square;
+}
+
+.ht{
+    list-style-type: circle;
+}
+
+.kieu1{
+    font-family: Verdana;
+    size: 13pt;
+}
+
+.kieu2{
+    font-family: Tahoma;
+    size: 13pt;
+}
+
+.kieu3{
+    font-family: 'Times New Roman';
+    size: 13pt;
+}
+
+.kieu4{
+    font-family: Verdana;
+    size: 13;
+}
+

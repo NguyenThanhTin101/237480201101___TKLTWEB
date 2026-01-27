@@ -1,0 +1,28 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,th,td,tr{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+th{
+    font-family: 'Times New Roman', Times, serif;
+    size: 14;
+    font-weight: bold;
+}
+
+th{
+    background-color: blue;
+}
+
+.tomau1{
+    background-color: pink;
+}
+
+.tomau2{
+    background-color: blue;
+}

@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(187, 222, 80);
+}
+h1{
+    color: red;
+}
+p{
+    font-family: Verdana;
+    color: green;
+}
+ol{
+    font-family: Verdana;
+    color: rgb(67, 67, 155);
+    font-weight: bold;
+}
+ul{
+    font-family: 'Times New Roman';
+    color: rgb(75, 51, 113);
+}
+
+.hv{
+    list-style-type: square;
+}
+
+.ht{
+    list-style-type: circle;
+}
