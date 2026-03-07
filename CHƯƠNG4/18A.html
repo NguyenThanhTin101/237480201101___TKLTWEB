@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bai 18A</title>
+
+<script>
+
+function DemKyTu(){
+
+var text = document.getElementById("NoiDung").value;
+var count = text.length;
+
+document.getElementById("SoKyTu").value = count;
+
+if(count > 200){
+alert("Bạn đã gõ quá số ký tự cho phép!");
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+Nội dung:<br>
+<textarea id="NoiDung" rows="5" cols="40" onkeyup="DemKyTu()"></textarea>
+
+<br><br>
+
+Số ký tự:
+<input type="text" id="SoKyTu">
+
+</body>
+</html>

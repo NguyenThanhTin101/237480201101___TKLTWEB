@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bài 19A</title>
+
+<script>
+function ThongBao(noidung){
+    document.getElementById("tb").innerHTML = noidung;
+}
+</script>
+
+</head>
+
+<body>
+
+Họ tên:
+<input type="text" name="HoTen"
+onmousemove="ThongBao('Bạn đang di chuyển chuột vào textbox Họ tên')">
+
+<br><br>
+
+Giới tính:
+
+<input type="radio" name="GioiTinh"
+onmousemove="ThongBao('Bạn đang di chuyển chuột vào nút Nam')"> Nam
+
+<input type="radio" name="GioiTinh"
+onmousemove="ThongBao('Bạn đang di chuyển chuột vào nút Nữ')"> Nữ
+
+<br><br>
+
+<input type="button" value="Gửi"
+onmousemove="ThongBao('Bạn đang di chuyển chuột vào nút Gửi')">
+
+<br><br>
+
+<b id="tb" style="color:red"></b>
+
+</body>
+</html>
+

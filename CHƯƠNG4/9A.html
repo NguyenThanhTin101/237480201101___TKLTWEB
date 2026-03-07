@@ -1,12 +1,43 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sắp xếp mảng</title>
+<meta charset="UTF-8">
+<title>Danh sách thiết bị</title>
 </head>
+
 <body>
-    <script language="JavaScript">
-        
-    </script>
+
+<h3>Nhập thiết bị văn phòng</h3>
+
+<input type="text" id="device">
+<button onclick="addDevice()">Thêm</button>
+<button onclick="showComputer()">Hiển thị Computer</button>
+
+<ul id="result"></ul>
+
+<script>
+
+var devices = []; // Array lưu danh sách thiết bị
+
+function addDevice(){
+    var name = document.getElementById("device").value;
+    devices.push(name);
+    document.getElementById("device").value = "";
+}
+
+function showComputer(){
+    var list = "";
+
+    for(var i = 0; i < devices.length; i++){
+        if(devices[i] == "Computer"){
+            list += "<li>" + devices[i] + "</li>";
+        }
+    }
+
+    document.getElementById("result").innerHTML = list;
+}
+
+</script>
+
 </body>
 </html>

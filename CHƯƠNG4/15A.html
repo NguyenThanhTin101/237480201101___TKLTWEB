@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title id="TieuDe">Demo</title>
+</head>
+
+<body>
+
+Màu nền: <input type="text" id="MauNen"><br><br>
+Màu chữ: <input type="text" id="MauChu"><br><br>
+Tiêu đề: <input type="text" id="TieuDeText"><br><br>
+Trạng thái: <input type="text" id="TrangThai"><br><br>
+
+<input type="button" value="Thay đổi" onclick="thaydoi()">
+
+<script>
+
+function thaydoi(){
+
+document.bgColor = document.getElementById("MauNen").value;
+document.body.style.color = document.getElementById("MauChu").value;
+document.title = document.getElementById("TieuDeText").value;
+window.status = document.getElementById("TrangThai").value;
+
+}
+
+</script>
+
+</body>
+</html>

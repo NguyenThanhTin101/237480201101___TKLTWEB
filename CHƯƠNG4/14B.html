@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bai 14B</title>
+</head>
+
+<body>
+
+Số hạng 1: <input type="text" id="SoHang1"><br><br>
+Số hạng 2: <input type="text" id="SoHang2"><br><br>
+
+<input type="radio" name="phep" value="cong"> Cộng
+<input type="radio" name="phep" value="tru"> Trừ
+<input type="radio" name="phep" value="nhan"> Nhân
+<input type="radio" name="phep" value="chia"> Chia
+
+<br><br>
+
+Kết quả: <input type="text" id="KetQua"><br><br>
+
+<input type="button" value="Tính" onclick="tinh()">
+
+<script>
+
+function tinh(){
+
+var a = Number(document.getElementById("SoHang1").value);
+var b = Number(document.getElementById("SoHang2").value);
+var phep = document.getElementsByName("phep");
+
+if(phep[0].checked)
+KetQua.value = a + b;
+
+if(phep[1].checked)
+KetQua.value = a - b;
+
+if(phep[2].checked)
+KetQua.value = a * b;
+
+if(phep[3].checked)
+KetQua.value = a / b;
+
+}
+
+</script>
+
+</body>
+</html>
