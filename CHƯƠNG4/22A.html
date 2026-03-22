@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 22A</title>
+</head>
+<body>
+
+<h3>Máy tính mini</h3>
+
+<input type="text" id="ketqua" readonly style="width:160px"><br><br>
+
+<button onclick="nhap('7')">7</button>
+<button onclick="nhap('8')">8</button>
+<button onclick="nhap('9')">9</button>
+<button onclick="nhap('+')">+</button><br>
+
+<button onclick="nhap('4')">4</button>
+<button onclick="nhap('5')">5</button>
+<button onclick="nhap('6')">6</button>
+<button onclick="nhap('-')">-</button><br>
+
+<button onclick="nhap('1')">1</button>
+<button onclick="nhap('2')">2</button>
+<button onclick="nhap('3')">3</button>
+<button onclick="nhap('*')">*</button><br>
+
+<button onclick="nhap('0')">0</button>
+<button onclick="nhap('/')">/</button>
+<button onclick="tinh()">=</button>
+<button onclick="xoa()">C</button>
+
+<script>
+function nhap(giatri) {
+    document.getElementById("ketqua").value += giatri;
+}
+
+function tinh() {
+    let bieuthuc = document.getElementById("ketqua").value;
+    document.getElementById("ketqua").value = eval(bieuthuc);
+}
+
+function xoa() {
+    document.getElementById("ketqua").value = "";
+}
+</script>
+
+</body>
+</html>

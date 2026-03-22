@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 20C</title>
+</head>
+<body>
+
+<h3>Tính lương nhân viên</h3>
+
+Họ tên:
+<input type="text" id="hoTen"><br><br>
+
+Năm vào làm:
+<input type="text" id="namVaoLam"><br><br>
+
+Hệ số:
+<input type="text" id="heSo"><br><br>
+
+Lương cơ sở:
+<input type="text" id="luongCoSo"><br><br>
+
+Lương cơ bản:
+<input type="text" id="luongCoBan" readonly><br><br>
+
+Phụ cấp:
+<input type="text" id="phuCap" readonly><br><br>
+
+Thâm niên:
+<input type="text" id="thamNien" readonly><br><br>
+
+Thành tiền:
+<input type="text" id="thanhTien" readonly><br><br>
+
+<button onclick="tinhLuong()">Tính lương</button>
+
+<script>
+function tinhLuong() {
+    let heSo = document.getElementById("heSo").value;
+    let luongCoSo = document.getElementById("luongCoSo").value;
+    let namVaoLam = document.getElementById("namVaoLam").value;
+
+    let namHienTai = new Date().getFullYear();
+
+    let luongCoBan = heSo * luongCoSo;
+    let phuCap = luongCoBan * 0.25;
+    let thamNien = namHienTai - namVaoLam;
+    let thanhTien = luongCoBan + phuCap;
+
+    document.getElementById("luongCoBan").value = luongCoBan;
+    document.getElementById("phuCap").value = phuCap;
+    document.getElementById("thamNien").value = thamNien;
+    document.getElementById("thanhTien").value = thanhTien;
+}
+</script>
+
+</body>
+</html>

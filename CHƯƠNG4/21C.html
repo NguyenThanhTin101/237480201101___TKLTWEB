@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 21C</title>
+</head>
+<body>
+
+<h3>Máy tính (Select)</h3>
+
+Số 1:
+<input type="text" id="so1"><br><br>
+
+Số 2:
+<input type="text" id="so2"><br><br>
+
+Chọn phép toán:
+<select id="phep">
+    <option value="+">Cộng</option>
+    <option value="-">Trừ</option>
+    <option value="*">Nhân</option>
+    <option value="/">Chia</option>
+</select><br><br>
+
+Kết quả:
+<input type="text" id="ketqua" readonly><br><br>
+
+<button onclick="tinh()">Tính</button>
+
+<script>
+function tinh() {
+    let a = parseFloat(document.getElementById("so1").value);
+    let b = parseFloat(document.getElementById("so2").value);
+    let phep = document.getElementById("phep").value;
+    let kq;
+
+    if (phep == '+') kq = a + b;
+    if (phep == '-') kq = a - b;
+    if (phep == '*') kq = a * b;
+    if (phep == '/') kq = a / b;
+
+    document.getElementById("ketqua").value = kq;
+}
+</script>
+
+</body>
+</html>
